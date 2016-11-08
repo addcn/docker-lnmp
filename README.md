@@ -24,7 +24,7 @@ docker run --name nginx -p 80:80 -v /var/www/html:/usr/local/nginx/html --link p
 
 > vi /var/www/html/test.php
 
-```
+```php
 <?php
 //date
 echo date("Y-m-d H:i:s")."<br />\n";
