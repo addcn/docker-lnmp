@@ -26,7 +26,7 @@ docker run --name nginx -p 80:80 -v /var/www/html:/usr/local/nginx/html --link p
 
 ```
 <?php
-//mysql
+//date
 echo date("Y-m-d H:i:s")."<br />\n";
 
 //mysql
