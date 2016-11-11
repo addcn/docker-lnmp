@@ -1,6 +1,6 @@
 # Introduction
 
-Deploy lnmp(Linux, Nginx, MySQL, PHP7) using docker.
+Deploy lnmp(Linux, Nginx, MySQL, PHP7) using docker. [Read More...](http://www.jianshu.com/p/fcd0e542a6b2)
 
 ## How To Use?
 
@@ -53,3 +53,8 @@ http://192.168.8.36/test.php
 ![docker-lnmp][1]
 
   [1]: docs/docker-lnmp.png
+
+
+## About me
+
+- 微博[http://www.weibo.com/addcn](http://www.weibo.com/addcn)
