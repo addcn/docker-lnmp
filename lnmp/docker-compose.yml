@@ -1,0 +1,36 @@
+# mysql
+mysql:
+    build: ./mysql
+    ports:
+        - "8306:3306"
+    environment:
+        - MYSQL_DATABASE=mysql
+        - MYSQL_USER=developer
+        - MYSQL_PASSWORD=root
+        - MYSQL_ROOT_PASSWORD=123456
+    volumes:
+        - /opt/data/mysql:/var/lib/mysql
+    restart: always
+
+# php7
+php7:
+    build: ./php7
+    ports:
+        - "9009:9000"
+    links:
+        - mysql
+#    volumes:
+#        - ./php7/config/php.ini:/usr/local/php/lib/php.ini:ro
+    restart: always
+
+# web
+nginx:
+    build: ./nginx
+    ports:
+        - "8000:80"
+        - "8430:443"
+    links:
+        - php7
+    volumes:
+        - /var/www/html:/usr/local/nginx/html
+    restart: always

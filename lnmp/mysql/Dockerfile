@@ -8,3 +8,5 @@ FROM mysql:5.7
 MAINTAINER dodo <lhuibo@gmail.com>
 
 ENV TZ "Asia/Shanghai"
+
+# COPY config/my.cnf /etc/mysql/my.cnf
